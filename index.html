@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Your library. <span id="countItems"></span> item(s)</h1>
+      <button class="addBook-btn">Add book +</button>
+    </header>
+    <main>
+      <div class="container"></div>
+    </main>
+    <dialog id="addNewBook">
+      <form method="dialog" id="book-form">
+        <label for="author"
+          >Author <input type="text" name="author" id="author"
+        /></label>
+        <label for="title"
+          >Title<input type="text" name="title" id="title"
+        /></label>
+        <label for="pages"
+          >Number of pages<input type="number" name="pages" id="pages"
+        /></label>
+        <label for="read"
+          >Read or not<input type="checkbox" name="read" id="read" />
+          <!-- <select name="read" id="read">
+            <option value="read">read</option>
+            <option value="not read">not read</option>
+          </select> -->
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
